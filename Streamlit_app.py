@@ -1,5 +1,6 @@
 import streamlit
 import openai
+openai.api_key = OPENAI_API_KEY
 st.write(this is my first streamlit app)
 prompt = "how are you doing"
 response = openai.Completion.create(
