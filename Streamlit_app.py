@@ -1,5 +1,5 @@
 import streamlit as st
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 st.write("this is my first streamlit app")
 prompt = "how are you doing"
 response = openai.Completion.create(
