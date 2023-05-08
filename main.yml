@@ -1,0 +1,42 @@
+name: Install Dependencies
+
+on:
+
+  push:
+
+    branches:
+
+      - main
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+
+        uses: actions/setup-python@v2
+
+        with:
+
+          python-version: 3.9
+
+      - name: Install Dependencies
+
+        run: |
+
+          pip install streamlit
+
+          pip install openai
+
+      - name: Run Your Streamlit Application
+
+        run: streamlit run your_app.py
+
