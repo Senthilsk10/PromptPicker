@@ -1,4 +1,5 @@
 import streamlit as st
+import openai
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 st.write("this is my first streamlit app")
 prompt = "how are you doing"
