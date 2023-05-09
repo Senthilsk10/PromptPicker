@@ -36,6 +36,5 @@ jobs:
 
           pip install openai
 
-      - name: Run Your Stron
 
 
